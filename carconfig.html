@@ -8,6 +8,49 @@
 <body>
 
 <h1>Fahrzeug-Konfigurator</h1>
+<form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+  <fieldset>
+    <label>Fahrzeugmodellen:
+      <select name="Fahrzeugmodell" size="1">
+        <option>BMW M2 Competition</option>
+        <option>BMW M3</option>
+        <option>BMW M4</option>
+        <option>BMW M5</option>
+        <option>BMW M8</option>
+        <option>BMW Z4</option>
+        <optgroup label="X_Models">
+          <option>BMW X3 M</option>
+          <option>BMW X4 M</option>
+          <option>BMW X5 M</option>
+          <option>BMW X6 M</option>
+        </optgroup>
+        <optgroup label="M-Series_Models">
+          <option>BMW 2 Series M240i</option>
+          <option>BMW 3 Series M340i</option>
+          <option>BMW 4 Series M440i</option>
+          <option>BMW 5 Series M550i</option>
+          <option>BMW 8 Series M850i</option>
+        </optgroup>
+      </select>
+    </label>
+   </fieldset>
+
+  <fieldset>
+    <label>Lackfarbe:
+      <input type="radio" id="cr" name="Farbe" value="Rot">
+      <label for="cr">Rot</label>
+      <input type="radio" id="cb" name="Farbe" value="Blau">
+      <label for="cb">Blau</label>
+      <input type="radio" id="cg" name="Farbe" value="Grün">
+      <label for="cg">Grün</label>
+      <input type="radio" id="cs" name="Farbe" value="Schwarz">
+      <label for="cs">Schwarz</label>
+    </label>
+  </fieldset>
+  <button type="submit">Absenden</button>
+  <button type="reset">Zurücksetzen</button>
+</form>
+
 
 
 </body>
